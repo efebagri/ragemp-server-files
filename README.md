@@ -15,3 +15,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channel>10_mNwuchuQ4ktWbR8d2N5jUzRt</channel>
 ```
+
+# If you want to use C# as backend what you may need
+#### settings.xml
+```xml
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <resource src="Core"/>
+    <acl_enabled>true</acl_enabled>
+    <log_console>true</log_console>
+    <log_chat>true</log_chat>
+</config>
+```
+ 
+#### meta.xml
+```xml
+<meta>
+    <info name="Core" description="Core Scripts" />
+    <script src="Core.dll" />
+</meta>
+```
+ 
+#### So that no unnecessary folder structures are created
+```xml
+<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+```
