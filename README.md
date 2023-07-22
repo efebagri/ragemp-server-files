@@ -13,6 +13,13 @@
 #### In the RAGEMP folder in the config.xml file, change the code to here:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
+<channel>prerelease_server</channel>
+```
+
+or the old version
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
 <channel>10_mNwuchuQ4ktWbR8d2N5jUzRt</channel>
 ```
 
