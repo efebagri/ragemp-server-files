@@ -26,6 +26,18 @@ or the old version
 # If you want to use C# as backend what you may need
 #### settings.xml
 ```xml
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <resource src="Core"/>
+  <acl_enabled>true</acl_enabled>
+  <log_console>true</log_console>
+  <log_chat>true</log_chat>
+</config>
+```
+
+ore the old version
+
+```xml
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <resource src="Core"/>
     <acl_enabled>true</acl_enabled>
